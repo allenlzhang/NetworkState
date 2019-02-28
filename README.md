@@ -1,5 +1,5 @@
 # NetworkState
-# 怎么使用
+# 一个轻量级的网络状态监听库，方便实用。
 # 1，引入库
     先在 build.gradle(Project:XXXX) 的 repositories 添加:
     allprojects {
