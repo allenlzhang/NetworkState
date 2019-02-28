@@ -62,11 +62,12 @@
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //反注册 
+        //注销
         NetworkManager.getInstance().unRegisterObserver(this);
-//        NetworkManager.getInstance().unRegisterAllObserver();
+	//注销所有
+	//NetworkManager.getInstance().unRegisterAllObserver();
+    	}
     }
-}
 # 5，其他
-  NetworkUtils.isAvailable();//可以判断当前网络是否可用
-  NetworkUtils.getNetType();//可以获取当前网络类型
+  	NetworkUtils.isAvailable();//可以判断当前网络是否可用
+  	NetworkUtils.getNetType();//可以获取当前网络类型
