@@ -34,6 +34,8 @@
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+	//你也可以在这里初始化，对当前页面网络实时监听
+	 NetworkManager.getInstance().init(this);
         //注册
         NetworkManager.getInstance().registerObserver(this);
        
